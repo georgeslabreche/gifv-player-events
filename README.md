@@ -5,25 +5,25 @@ Small modifications of [givf-player.js](https://github.com/globocom/gifv-player)
 Removed the following event listeners:
 ```javascript
 bindEvents: function () {
-var player = this;
-/*
-$(document).on('click.gifv', this.selector, function (event) {
-event.preventDefault();
+    var player = this;
+    /*
+    $(document).on('click.gifv', this.selector, function (event) {
+        event.preventDefault();
 
-var $player = $(this);
-player.playPause($player);
+        var $player = $(this);
+        player.playPause($player);
 
-return true;
-});
+        return true;
+    });
 
-if (this.options.autostart) {
-$(document).on('mouseenter.gifv', this.selector, function (event) {
-event.preventDefault();
+    if (this.options.autostart) {
+        $(document).on('mouseenter.gifv', this.selector, function (event) {
+            event.preventDefault();
 
-var $player = $(this);
-player.play($player);
-});
-}*/
+            var $player = $(this);
+            player.play($player);
+        });
+    }*/
 ```
 ##Demo
 The demo simply showcases how two buttons can be used to play and pause the gifv.
@@ -36,5 +36,5 @@ $("#pause").click(function() {
     $('.gifv-player').find('video')[0].pause();
 });
 ```
-For in depth details on how gifv-player works, consult the [project's repo](https://github.com/globocom/gifv-player) so that [gifv](http://imgur.com/blog/2014/10/09/introducing-gifv/) 
+For in depth details on how gifv-player actually works, consult the [project's repo](https://github.com/globocom/gifv-player).
 
