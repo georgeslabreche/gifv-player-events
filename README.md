@@ -2,7 +2,7 @@
 Small modifications of [givf-player.js](https://github.com/globocom/gifv-player) so that [gifv](http://imgur.com/blog/2014/10/09/introducing-gifv/) videos aren't played by _onclick_ and _mouseenter_ events.
 
 ## Small modifications?
-Removed the following event listeners:
+Removed the _onclick_ and _mouseenter_ event listeners:
 ```javascript
 bindEvents: function () {
     var player = this;
@@ -25,13 +25,14 @@ bindEvents: function () {
         });
     }*/
 ```
-##Demo
+## Demo
 The demo simply showcases how two buttons can be used to play and pause the gifv.
 ```javascript
 $("#play").click(function() {
     $('.gifv-player').find('video').show();
     $('.gifv-player').find('video')[0].play();
 });
+
 $("#pause").click(function() {
     $('.gifv-player').find('video')[0].pause();
 });
