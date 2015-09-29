@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GifV Player Demo</title>
+    <title>GifV Player Demo with Play/Pause Event Listeners</title>
     <style type="text/css">
         body {
             font-family: sans-serif;
@@ -35,11 +35,11 @@
     </script>
 </head>
 <body>
-    <h1>GifV Player Demo With Play/Pause Event Listener</h1>
+    <h1>GifV Player Demo with Play/Pause Event Listeners</h1>
 
     <input type="button" id="play" value="Play"></input>
     <input type="button" id="pause" value="Pause"></input>
-    <br /><br />
+    <br/><br/>
 
     <div class="gifv-player">
         <video preload="none" loop="loop" width="446" height="252">
@@ -47,6 +47,10 @@
             <source type="video/mp4" src="sample-animated.mp4" />
         </video>
         <img src="sample-poster.png" data-gifv-original="sample-animated.gif" width="446" height="252" alt="Animated Gif" />
+    </div>
+
+    <div style="padding-top:30px;font-size:11px;">
+        <a href="https://github.com/georgeslabreche/gifv-player-events" target="_blank">This project</a> is a modification of the original gifv-player <a href="https://github.com/globocom/gifv-player" target="_blank">project repo</a> and <a href="http://globocom.github.io/gifv-player/demo/" target="_blank">demo</a> by <a href="http://opensource.globo.com/en/" target="_blank">globo.com</a>.
     </div>
 </body>
 </html>
